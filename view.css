@@ -1,0 +1,157 @@
+
+/* Reset some default styles */
+body, h5, ul, li, a, button, input, form, marquee {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('R.gif'); /* Add your background image here */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar styling */
+.navbar {
+    margin-bottom: 20px;
+}
+/* Transparent Navbar Styling */
+.navbar {
+    background: rgba(196, 100, 100, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    box-shadow: none;
+    padding: 10px 20px; /* Adjusted padding */
+}
+
+.navbar-brand {
+    color: #fff; /* White color for brand text */
+    font-size: 1.5em; /* Larger font size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #00ff00; /* Light green color on hover/focus */
+}
+
+.nav-link {
+    color: #ffffff; /* White color for navigation links */
+    font-size: 1.2em; /* Increase font size for better readability */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #00ff00; /* Light green color on hover/focus */
+    text-decoration: none; /* No underline on hover */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Lighter border for the toggle button */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Logo styling */
+.logo {
+    transform: translateY(2px);
+    padding: 0;
+}
+h3{
+    color: #e8e8e8;
+}
+/* Main content and sidebar styling */
+#main_content {
+    padding: 20px;
+    height: 100vh; /* Full height */
+    background-color: transparent; /* Transparent background */
+    margin-left: 240px; /* Ensure no overlap with sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    position: relative;
+    z-index: 1;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+
+/* List item marker color */
+li::marker {
+    color: red;
+}
+
+/* Form group styling */
+.form-group {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+form {
+    
+     width: 50%; /* Adjust width as needed */
+    min-width: 300px; /* Ensure form is not too small on narrow screens */
+    height: 60%; /* Adjust height as needed */
+    min-height: 400px; /* Minimum height */
+   
+    padding: 40px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+    color: rgb(28, 12, 12); /* Make label text white */
+}
+
+/* Input styling */
+input {
+    margin-bottom: 10px;
+}
+
+/* Navbar item padding */
+.nav-item {
+    padding: 0 10px;
+}
+
+/* Marquee styling */
+marquee {
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+/* Button styling */
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Error message styling */
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
